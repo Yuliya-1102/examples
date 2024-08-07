@@ -4,7 +4,7 @@ import injectHTML from 'vite-plugin-html-inject';
 
 const filesHtml = {
     main: resolve(__dirname, 'index.html'),
-    pages: resolve(__dirname, 'pages/index.html'),
+    pages: resolve(__dirname, 'pages/articles.html'),
 };
 
 // array.forEach(element => {
