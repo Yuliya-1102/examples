@@ -1,0 +1,59 @@
+/* 
+// component-window-cookie
+// ---------------------------------------------------------------------------------
+*/
+.component-window-cookie {    
+    position: fixed;
+    width: 100%;
+    max-width: min(calc(100% - 2rem), 40rem);
+    bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #ffffff;
+    box-shadow: 0 0 4px #777;
+}
+.component-window-cookie--not-active {
+    display: none;
+}
+.component-window-cookie__inner {
+    display: flex;
+    gap: 1rem;
+    min-height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.component-window-cookie__text {
+    color: #333;
+}
+.component-window-cookie__button:hover {
+    color: white;
+    background-color: #333;
+    opacity: 0.5;
+    border-color: #333;
+}
+.component-window-cookie__button,
+.component-window-cookie__button:active {
+    color: #333;
+    background-color: white;
+    padding: .5rem 2rem;
+    box-shadow: 0 0 4px white;
+    text-transform: capitalize;
+    border: solid 2px black;
+    opacity: 1;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 40rem) {
+    .component-window-cookie__inner {
+        flex-direction: column;
+    }
+    .component-window-cookie__button {
+        margin-left: auto;
+        width: 100%;
+    }
+}
