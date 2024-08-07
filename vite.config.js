@@ -1,3 +1,4 @@
+import { resolve } from 'path'
 import { defineConfig } from 'vite';
 import injectHTML from 'vite-plugin-html-inject';
 
